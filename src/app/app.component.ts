@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'platzi-angular';
+
+  myEvent(event: Event) {
+
+  }
+
 }
