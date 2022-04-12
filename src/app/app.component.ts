@@ -6,10 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'platzi-angular';
 
-  myEvent(event: Event) {
+/*   button = true;
 
-  }
+  toggleButton(): void {
+    this.button = !this.button;
+  } */
+
+  constructor() {}
 
 }

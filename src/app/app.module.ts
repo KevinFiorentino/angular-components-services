@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PruebaComponent } from './components/prueba/prueba.component';
-import { Prueba2Component } from './components/prueba2/prueba2.component';
+import { CatalogoComponent } from './components/catalogo/catalogo.component';
+import { ProductoComponent } from './components/producto/producto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PruebaComponent,
-    Prueba2Component
+    CatalogoComponent,
+    ProductoComponent,
   ],
   imports: [
     BrowserModule,
