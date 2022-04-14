@@ -31,20 +31,33 @@
   .header-right {
     float: right;
   }
+
+  .show-side-menu {
+    display: none;
+  }
 }
 
 /* Header Mobile */
 @media screen and (max-width: 512px) {
+  .d-flex-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .header {
-
     a {
       float: none;
       display: block;
       text-align: left;
     }
-
     .header-right {
       float: none;
     }
+  }
+  .show-side-menu {
+    display: block !important;
+  }
+  .hidde-menu {
+    display: none;
   }
 }
