@@ -2,4 +2,5 @@
     <h2>{{ producto.name }}</h2>
     <img [src]="producto.image" width="200px" height="200px">
     <p>Precio: {{ producto.precio }}</p>
+    <button (click)="addToShoppingCart(producto)">Agregar al carrito</button>
 </div>

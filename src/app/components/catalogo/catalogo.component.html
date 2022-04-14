@@ -3,8 +3,14 @@
 <div *ngIf="productos" class="catalogo">
   <app-producto *ngFor="let p of productos"
     [producto]="p"
+    (addProduct)="addProductToCart($event)"
   ></app-producto>
 </div>
 
+<br>
 
+<div>
+    <h3>Cantidad: {{ shoppingCart.length }}</h3>
+    <h3>Total a pagar: {{ total }}</h3>
+</div>
 

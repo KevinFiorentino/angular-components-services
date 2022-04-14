@@ -6,7 +6,10 @@ import { Producto } from '../../interfaces/producto.interface';
   templateUrl: './catalogo.component.html',
   styleUrls: ['./catalogo.component.scss']
 })
-export class CatalogoComponent implements OnInit {
+export class CatalogoComponent {
+
+  public shoppingCart: Producto[] = [];
+  public total = 0;
 
   public productos: Producto[] = [
     {
@@ -37,8 +40,9 @@ export class CatalogoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.productos)
+  addProductToCart(p: Producto): void {
+    this.shoppingCart.push(p);
+    this.total += p.precio;
   }
 
 }

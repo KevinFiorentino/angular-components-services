@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-/*   button = true;
-
-  toggleButton(): void {
-    this.button = !this.button;
-  } */
-
   constructor() {}
 
 }

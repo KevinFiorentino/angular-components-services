@@ -1,6 +1,7 @@
 {
   "name": "platzi-angular",
   "version": "0.0.0",
+  "author": "Kevin Fiorentino for Platzi's courses",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
