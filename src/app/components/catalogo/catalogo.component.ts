@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestNameService } from 'src/app/services/test-name.service';
 import { Producto } from '../../interfaces/producto.interface';
 
 @Component({
@@ -6,7 +7,7 @@ import { Producto } from '../../interfaces/producto.interface';
   templateUrl: './catalogo.component.html',
   styleUrls: ['./catalogo.component.scss']
 })
-export class CatalogoComponent {
+export class CatalogoComponent implements OnInit {
 
   public shoppingCart: Producto[] = [];
   public total = 0;
@@ -38,7 +39,14 @@ export class CatalogoComponent {
     }
   ];
 
-  constructor() { }
+  constructor(
+    private testNameService: TestNameService,
+  ) { }
+
+  ngOnInit(): void {
+    const name = this.testNameService.getTestName();
+    console.log(name);
+  }
 
   addProductToCart(p: Producto): void {
     this.shoppingCart.push(p);
