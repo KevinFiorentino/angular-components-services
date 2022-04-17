@@ -9,6 +9,8 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { CustomCurrencyPipe } from './pipes/custom-currency.pipe';
+import { TestNamePipe } from './pipes/test-name.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     ProductoComponent,
     NavBarComponent,
     SideBarComponent,
+    CustomCurrencyPipe,
+    TestNamePipe,
   ],
   imports: [
     BrowserModule,
