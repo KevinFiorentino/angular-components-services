@@ -2,3 +2,23 @@
 <app-nav-bar></app-nav-bar>
 
 <app-catalogo></app-catalogo>
+
+<br>
+
+<div>
+    <h3>Custom Pipes</h3>
+    {{ 1000 | customCurrency:'USD' }}
+</div>
+
+<br>
+
+<h3>Custom Directives</h3>
+<div>
+    <p appChangeColor [color]="'blue'">Texto color azul.</p>
+</div>
+<div>
+    <p appChangeColor [color]="'red'">Texto color rojo.</p>
+</div>
+<div>
+    <p appChangeColor [color]="'green'">Texto color verde.</p>
+</div>
