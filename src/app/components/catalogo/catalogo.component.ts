@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
-import { TestNameService } from 'src/app/services/test-name.service';
+import { StoreService } from 'src/app/services/store.service';
 import { Producto } from '../../interfaces/producto.interface';
 
 @Component({
@@ -16,12 +16,11 @@ export class CatalogoComponent implements OnInit {
   public productos: Producto[] = [];
 
   constructor(
-    private testNameService: TestNameService,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private StoreService: StoreService
   ) { }
 
   ngOnInit(): void {
-    const name = this.testNameService.getTestName();
     this.apiService.getProducts()
       .subscribe(res => {
         this.productos = res;
@@ -29,6 +28,10 @@ export class CatalogoComponent implements OnInit {
   }
 
   addProductToCart(p: Producto): void {
+    // Add producto con RxJS
+    this.StoreService.addProducto(p);
+
+    // Add producto sin RxJS
     this.shoppingCart.push(p);
     this.total += p.precio;
   }
