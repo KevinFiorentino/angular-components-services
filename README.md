@@ -1,8 +1,12 @@
-### Platzi - Angular Componentes y Servicios
+## Platzi - Angular Componentes y Servicios
 
-Proyecto creado en colaboración con el [Curso de Angular, Componentes y Servicios](https://platzi.com/cursos/angular-componentes/) de Platzi.
+Proyecto creado en colaboración con **Platzi**.
 
-###### Abril 2021
+Documentación del proyecto:
+  - [Fundamentos de Angular](https://platzi-contributors.document360.io/docs/que-es-angular-y-como-aprenderlo)
+  - [Componentes y servicios en Angular](https://platzi-contributors.document360.io/docs/todo-lo-que-aprenderas-sobre-componentes-y-servicios-en-angular)
+
+###### Abril 2022
 
 ---
 
